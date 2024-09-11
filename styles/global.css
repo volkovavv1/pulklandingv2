@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  line-height: normal;
+  font-family: Rubik;
+  color: #554148;
+}
+
+:root {
+  --white: #fff;
+  --purple: #790028;
+  --gray: #b6b6b6;
+  --brightyellow: #fdc41f;
+  --pink: #efbeba;
+  --black: #000;
+}

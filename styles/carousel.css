@@ -1,0 +1,152 @@
+.carousel-container {
+    max-width: 100%;
+    height: 100vw;
+    padding-top: 10vw;
+    padding: 10vw 15% 0 15%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.6s ease;
+    width: fit-content;
+}
+
+.carousel-slide {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    flex: 0 0 100%;
+    position: relative;
+}
+
+.mainprize {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.mainprize-heading {
+    padding-bottom: 3vw;
+  }
+
+.mainprize-desc {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+  }
+  
+.mainprize-text {
+    list-style: none;
+    color: white;
+    font-size: 1.51vw;
+    font-weight: 400;
+    padding: 0;
+}
+
+.mainprize-text > li {
+  padding-bottom: 0.5vw;
+}
+
+  .mainprize-img {
+    width: 31.78vw;
+    height: 33.54vw;
+    position: relative;
+  }
+  
+  .macbook-icon {
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .heading-yellow {
+    color: var(--brightyellow);
+    font-size: 2vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    width: fit-content;
+  }
+
+  .mainphone-icon {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 16.78vw;
+    height: 26.54vw;
+    z-index: 1;
+  }
+
+  .kolonka-icon {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 16.78vw;
+    height: 16.54vw;
+    z-index: 1;
+  }
+
+  #prev, #next {
+    border: none;
+    background: transparent;
+  }
+
+  .arrow-btn {
+    width: 5vw;
+  }
+
+  .arrow-btn__right {
+    transform: rotate(180deg);
+  }
+
+  .buttons-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .backgroundblur3 {
+    position: absolute;
+    top: 6.95vw;
+    left: -4vw;
+    filter: blur(7.6vw);
+    border-radius: 10.42vw;
+    background-color: #fbc986;
+    width: 36.04vw;
+    height: 26.04vw;
+  }
+
+  .backgroundblur4{
+    position: absolute;
+    filter: blur(9.125vw);
+    border-radius: 10.42vw;
+    background-color: #ffeed9;
+    width: 12vw;
+    height: 22vw;
+    top: 10%;
+    left: 30%;
+  }
+
+@media (max-width: 1024px) {
+    .mainprize-desc{
+      margin-top: 4vw;
+      width: 33vw;
+    }
+  
+    .heading-yellow {
+      font-size: 2.5vw;
+    }
+  
+    .mainprize-text {
+      font-size: 2.3vw;
+  }
+}
