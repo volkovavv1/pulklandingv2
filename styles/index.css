@@ -434,7 +434,9 @@ section {
 
 .promo {
   height: 57.6vw;
-  background: #ead3c1;
+  border-radius: 30px;
+  background: rgba(234, 211, 193, 1);
+  /* background: linear-gradient(180deg, rgba(234,211,193,1) 86%, rgba(191,165,166,1) 100%); */
 }
 
 .promo-header__green {
@@ -521,26 +523,26 @@ section {
 
 .span-pink {
   color: #be1e12;
+  font-weight: 700;
 }
-
 
 .promo-cake {
   height: 46.88vw;
   width: 46.88vw;
-  background-image: url(../../img/redcake.png);
+  background-image: url(../img/redcake.png);
   background-repeat: no-repeat;
   border-radius: 50%;
   background-size: contain;
-  background-position: center;
+  /* background-position: center; */
   box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 
 .promo-cake {
-  --n: 17;   /* control the number of dashes */
+  --n: 12;   /* control the number of dashes */
   --d: 8deg; /* control the distance between dashes */
-  --t: 10px;  /* control the thickness of border*/
+  --t: 30px;  /* control the thickness of border*/
   --c: rgb(209, 173, 176);  /* control the coloration (can be a gradient) */
   aspect-ratio: 1;
   position: relative;

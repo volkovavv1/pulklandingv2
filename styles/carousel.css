@@ -1,7 +1,6 @@
 .carousel-container {
-    max-width: 100%;
-    height: 100vw;
-    padding-top: 10vw;
+    width: 70%;
+    height: 50vw;
     padding: 10vw 15% 0 15%;
     margin: 0 auto;
     overflow: hidden;
@@ -24,6 +23,7 @@
 }
 
 .mainprize {
+    position: relative;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -31,9 +31,9 @@
     justify-content: center;
   }
 
-.mainprize-heading {
+/* .mainprize-heading {
     padding-bottom: 3vw;
-  }
+  } */
 
 .mainprize-desc {
     display: flex;
@@ -120,20 +120,31 @@
     left: -4vw;
     filter: blur(7.6vw);
     border-radius: 10.42vw;
-    background-color: #fbc986;
+    background-color: #ffa9ca;
     width: 36.04vw;
     height: 26.04vw;
   }
 
   .backgroundblur4{
     position: absolute;
-    filter: blur(9.125vw);
+    filter: blur(5.125vw);
     border-radius: 10.42vw;
-    background-color: #ffeed9;
+    background-color: #ffffff;
     width: 12vw;
-    height: 22vw;
-    top: 10%;
+    height: 5vw;
+    top: 25%;
     left: 30%;
+  }
+
+  .backgroundcake{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 7.25vw;
+    height: 7.25vw;
+    background-image: url('../img/cake.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
 @media (max-width: 1024px) {

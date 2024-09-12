@@ -27,9 +27,9 @@ if (nextButton && prevButton) {
     });
 }
 
-const autoAdvanceInterval = 5000; 
+// const autoAdvanceInterval = 5000; 
 
-setInterval(() => {
-    currentIndex++;
-    showSlide(currentIndex);
-}, autoAdvanceInterval);
+// setInterval(() => {
+//     currentIndex++;
+//     showSlide(currentIndex);
+// }, autoAdvanceInterval);
