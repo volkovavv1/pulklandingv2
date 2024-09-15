@@ -69,7 +69,7 @@
   }
   
   .heading-yellow {
-    color: var(--brightyellow);
+    color: #804b5f;
     font-size: 2vw;
     font-weight: 700;
     text-transform: uppercase;
@@ -140,9 +140,9 @@
     position: absolute;
     top: 0;
     left: 10%;
-    width: 7.25vw;
-    height: 7.25vw;
-    background-image: url('../img/cake.png');
+    width: 13.33vw;
+    height: 13.33vw;
+    background-image: url('../img/cake-color.png');
     background-size: contain;
     background-repeat: no-repeat;
   }

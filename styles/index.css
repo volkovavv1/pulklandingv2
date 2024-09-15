@@ -18,7 +18,7 @@ section {
 .main {
   position: relative;
   width: 100%;
-  background-color: #bfa5a6;
+  background-color: #998485;
   display: flex;
   flex-direction: column;
   line-height: normal;
@@ -116,7 +116,7 @@ section {
 }
 
 .win-heading__yellow {
-  color: #a5637c;
+  color: #804b5f;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.23vw;
@@ -189,7 +189,7 @@ section {
 }
 
 .winners-container {
-  background-color: #f8e3e6;
+  background-color: #f8e3e673;
   overflow: hidden;
   width: 100%;
   display: flex;
@@ -198,7 +198,6 @@ section {
   border-radius: 2vw;
   
   padding: 0;
-
   box-sizing: border-box;
   height: 28.44vw;
 }
@@ -208,7 +207,7 @@ section {
   font-weight: 800;
   text-align: center;
   margin: 0;
-  color: #000;
+  color: #492838;
 }
 
 .winners-content-wrapper {
@@ -408,7 +407,7 @@ section {
   text-decoration: none;
 
   font-weight: 500;
-  font-size: 1.2vw;
+  font-size: 0.8vw;
 
   color: inherit;
   cursor: pointer;
@@ -447,7 +446,7 @@ section {
   font-size: 6.67vw;
   font-weight: 800;
   
-  width: 42.97vw;
+  width: 42.11vw;
   height: 8.02vw;
   padding-top: 0.68vw;
 }
@@ -513,12 +512,18 @@ section {
 .promo-header__vibe {
   height: 8.96vw;
 
-  font-size: 6.67vw;
+  font-size: 6.54vw;
   font-weight: 800;
 
-  color: #8f4662;
+  color: #72384e;
 
   margin: 0 0.94vw; 
+}
+
+.headings{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .span-pink {
@@ -537,14 +542,15 @@ section {
   box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+  border: 30px double black;
 }
 
-.promo-cake {
+/* .promo-cake {
   --n: 12;   /* control the number of dashes */
-  --d: 8deg; /* control the distance between dashes */
-  --t: 30px;  /* control the thickness of border*/
-  --c: rgb(209, 173, 176);  /* control the coloration (can be a gradient) */
-  aspect-ratio: 1;
+/*  --d: 8deg; /* control the distance between dashes */
+/*  --t: 30px;  /* control the thickness of border*/
+/*  --c: rgb(209, 173, 176);  /* control the coloration (can be a gradient) */
+/*  aspect-ratio: 1;
   position: relative;
 }
 
@@ -563,7 +569,7 @@ section {
          #0000 0 calc(360deg/var(--n))
        );
   mask-composite: intersect;
-}
+} */
 
 .heading-group {
   display: flex;
@@ -755,11 +761,11 @@ section {
 
 .participate-bg {
   height: 39.32vw;
-  width: 81.04vw;
+  width: 60.75vw;
   position: absolute;
   margin: 0;
   top: 0;
-  left: 0;
+  left: 10%;
 }
 
 .participate-bg-icon {
@@ -777,6 +783,7 @@ section {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding-bottom: 6vw;
 }
 
 .addcheck-heading {
@@ -787,13 +794,14 @@ section {
 .check-form {
   display: flex;
   flex-direction: column;
-  gap: 2vw;
+  /* gap: 2vw; */
   font-size: 1.51vw;
   font-weight: 400;
   
 }
 
 .check-label {
+  margin-bottom: 2vw;
   margin-left: 10px;
 }
 
@@ -811,6 +819,7 @@ section {
 
   font-size: 1.5vw;
   padding: 1vw;
+  margin-bottom: 3vw;
 }
 
 .check-input__err {
@@ -845,13 +854,13 @@ section {
 }
 
 .check-btn {
-  background-color: #858383;
-  color: rgb(0, 0, 0);
+  background-color: #79002841;
+  color: #ffffff59;
 }
 
 .check-btn:hover {
-  background-color: #858383;
-  color: rgb(51, 51, 51);
+  background-color: #79002841;
+  color: #ffffff59;
 }
 
 .check-form > button {
