@@ -29,10 +29,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0;
   }
 
 /* .mainprize-heading {
-    padding-bottom: 3vw;
+    margin: 0 auto;
   } */
 
 .mainprize-desc {
@@ -69,7 +70,8 @@
   }
   
   .heading-yellow {
-    color: #804b5f;
+    color: #5f0527;
+    /* color: #804b5f; */
     font-size: 2vw;
     font-weight: 700;
     text-transform: uppercase;
@@ -134,17 +136,6 @@
     height: 5vw;
     top: 25%;
     left: 30%;
-  }
-
-  .backgroundcake{
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 13.33vw;
-    height: 13.33vw;
-    background-image: url('../img/cake-color.png');
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
 @media (max-width: 1024px) {
