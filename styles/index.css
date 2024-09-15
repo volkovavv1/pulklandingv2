@@ -883,9 +883,9 @@ section {
 .backgroundcake {
   position: absolute;
   top: 4%;
-  left: 8.2%;
-  width: 13.33vw;
-  height: 13.33vw;
+  left: 2%;
+  width: 11vw;
+  height: 11vw;
   background-image: url(../img/cake-color.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -897,8 +897,8 @@ section {
   position: absolute;
   bottom: 10%;
   right: 3.5%;
-  width: 18vw;
-  height: 18vw;
+  width: 15.5vw;
+  height: 15.5vw;
   background-image: url(../img/cake-color.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -907,7 +907,7 @@ section {
 
 .backgroundcake-form {
   top: 3vw;
-  left: -40%;
+  left: -43%;
 }
 
 .backgroundcake-big__form {
@@ -917,6 +917,11 @@ section {
 
 #bgcake-form__big {
   top: 30vw;
+}
+
+#questions-bgcake__big {
+  width: 13vw;
+  height: 13vw;
 }
 
 .trophy {
@@ -1371,10 +1376,6 @@ section {
     filter: blur(6vw);
   }
 
-  .backgroundcake {
-    top: 14%;
-  }
-
   .addcheck {
     padding-bottom: 0;
     width: 55vw;
@@ -1404,15 +1405,23 @@ section {
     height: 4vw;
   }
 
+  .backgroundcake {
+    top: 18%;
+  }
+
   .backgroundcake__big{
     right: 1%;
-    width: 16.5vw;
-    height: 16.5vw;
+    width: 14vw;
+    height: 14vw;
+  }
+
+  .backgroundcake-form {
+    left: -33%;
   }
 
   #bgcake-form__big {
     top: 40vw;
-    right: -40%;
+    right: -35%;
   }
 
   .winners-text,
