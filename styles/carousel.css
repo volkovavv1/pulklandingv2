@@ -118,13 +118,13 @@
 
   .backgroundblur3 {
     position: absolute;
-    top: 6.95vw;
-    left: -4vw;
-    filter: blur(7.6vw);
-    border-radius: 10.42vw;
+    top: 7vw;
+    left: 0;
+    filter: blur(5vw);
+    border-radius: 4.42vw;
     background-color: #ffa9ca;
-    width: 36.04vw;
-    height: 26.04vw;
+    width: 30.04vw;
+    height: 26vw;
   }
 
   .backgroundblur4{
@@ -141,6 +141,8 @@
 @media (max-width: 1024px) {
     .mainprize{
       gap: 2.32vw;
+      padding-bottom: 0;
+      margin-bottom: 10vw;
     }
 
     .mainprize-desc{

@@ -7,7 +7,7 @@ p {
 }
 
 section {
-  padding-bottom: 5.47vw;;
+  padding-bottom: 7vw;
 }
 
 .container {
@@ -146,11 +146,12 @@ section {
 
 .backgroundblur2 {
   position: absolute;
+  top: -1vw;
   filter: blur(4.5vw);
   border-radius: 8.07vw;
   background-color: white;
   width: 12vw;
-  height: 17vw;
+  height: 14vw;
 }
 
 .ticket-image {
@@ -882,7 +883,7 @@ section {
 .backgroundcake {
   position: absolute;
   top: 4%;
-  left: 10%;
+  left: 8.2%;
   width: 13.33vw;
   height: 13.33vw;
   background-image: url(../img/cake-color.png);
@@ -895,7 +896,7 @@ section {
 .backgroundcake__big {
   position: absolute;
   bottom: 10%;
-  right: 6%;
+  right: 3.5%;
   width: 18vw;
   height: 18vw;
   background-image: url(../img/cake-color.png);
@@ -1044,7 +1045,7 @@ section {
   }
 
   .promo {
-    height: 110vw;
+    height: 115vw;
   }
 
   .header-container {
@@ -1126,6 +1127,7 @@ section {
 
   .vibe-heading {
     width: 24.93vw;
+    padding-bottom: 4vw;
   }
 
   .promo-cake__mobile {
@@ -1204,13 +1206,14 @@ section {
     position: static;
     width: 74.22vw;
     height: 60.64vw;
-    margin: 5vw auto 0 auto;
+    margin: 7vw auto 10vw auto;
+    padding-bottom: 0;
   }
 
   .participate-container {
     justify-content: start;
     width: 69.16vw;
-    height: 44.16vw;
+    gap: 8vw;
   }
 
   .step {
@@ -1278,8 +1281,9 @@ section {
 
   .win-section {
     flex-direction: column;
-    margin: 0 auto;
-    gap: 5vw
+    margin: 0 auto 10vw auto;
+    gap: 5vw;
+    padding-bottom: 0;
   }
 
   .description {
@@ -1372,7 +1376,9 @@ section {
   }
 
   .addcheck {
-    width: 55vw
+    padding-bottom: 0;
+    width: 55vw;
+    margin-bottom: 10vw;
   }
 
   .win-heading {
@@ -1400,6 +1406,8 @@ section {
 
   .backgroundcake__big{
     right: 1%;
+    width: 16.5vw;
+    height: 16.5vw;
   }
 
   #bgcake-form__big {
