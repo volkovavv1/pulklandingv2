@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    let header = $(".header-navigation");
+    
+
     $('.error-input').hide();
 
     $(".question-inside").on("click", function() {
@@ -36,25 +39,22 @@ $(document).ready(function() {
         $('.error-input').show();
       }
 
-      let header = $(".header-navigation");
-
-      $('.burger-menu').on('click', function() {
+    $(document).on('click', function(e) {
+    if ($('.burger-menu').is(e.target)) {
         if ( !header.hasClass('header-navigation__active') ) {
             header.addClass('header-navigation__active');
-            header.fadeIn()
             header.css({ display: 'flex'})
         } else if ( header.hasClass('header-navigation__active') ) {
+            header.removeClass('header-navigation__active');
             header.css({ display: 'none'})
-            header.fadeOut()
-            header.removeClass('header-navigation__active');
         }
+    } else if (header.hasClass('header-navigation__active')) {
+        header.removeClass('header-navigation__active');
+        header.css({ display: 'none'})
+    }});
 
-      $(document).on('click', function(e) {
-        if (!$('.burger-menu').is(e.target)) {
-            header.removeClass('header-navigation__active');
-            header.fadeOut()
-        }
-    });
-    });
+    if ($('#participate-id').css('display') == 'none') {
+        $("#participate-link").attr("href", "#participate-mobile__id");
+    }
 })
 
