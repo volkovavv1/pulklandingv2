@@ -7,7 +7,7 @@ p {
 }
 
 section {
-  padding-bottom: 10.89vw;;
+  padding-bottom: 5.47vw;;
 }
 
 .container {
@@ -36,7 +36,7 @@ section {
 }
 
 .win-section {
-  margin: 44vw 14.39vw 0 auto;
+  margin: 41vw 14.39vw 0 auto;
 }
 
 .win {
@@ -387,7 +387,7 @@ section {
 
 .header-container {
   display: flex;
-  margin: 10px auto 10px 7vw;
+  margin: 0.52vw 7vw;
   width: 91.09vw;
   /* gap: 21.3vw; */
   z-index: 2;
@@ -544,12 +544,12 @@ section {
 }
 
 .promo-cake {
-  --n: 12;   /* control the number of dashes */
+  --n: 12;
   --nu: 5;
-  --d: 20deg; /* control the distance between dashes */
+  --d: 20deg;
   --du: 0deg;
-  --t: 30px;  /* control the thickness of border*/
-  --c: var(--purple);  /* control the coloration (can be a gradient) */
+  --t: 1.56vw; 
+  --c: var(--purple);
   aspect-ratio: 1;
   position: relative;
 }
@@ -576,7 +576,7 @@ section {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  padding: 30px;
+  padding: 1.56vw;
   background: rgb(214, 163, 167);
   mask:
       linear-gradient(#0000 0 0) content-box,
@@ -605,7 +605,7 @@ section {
 
   height: 39.32vw;
   width: 70.75vw;
-  padding-bottom: 100px;
+  padding-bottom: 5.21vw;
   text-align: center;
 }
 
@@ -644,7 +644,7 @@ section {
   font-size: 1.3vw;
   
   width: 18.125vw;
-  margin-top: 10px;
+  margin-top: 0.52vw;
 }
 
 .participate-text__three {
@@ -814,7 +814,7 @@ section {
 
 .check-label {
   margin-bottom: 1.5vw;
-  margin-left: 10px;
+  margin-left: 0.52vw;
 }
 
 .check-input {
@@ -881,11 +881,11 @@ section {
 
 .backgroundcake {
   position: absolute;
-  top: 0;
+  top: 4%;
   left: 10%;
   width: 13.33vw;
   height: 13.33vw;
-  background-image: url('../img/cake-color.png');
+  background-image: url(../img/cake-color.png);
   background-size: cover;
   background-repeat: no-repeat;
   transform: scale(-1, 1);
@@ -894,8 +894,8 @@ section {
 
 .backgroundcake__big {
   position: absolute;
-  bottom: -4%;
-  right: 10%;
+  bottom: 10%;
+  right: 6%;
   width: 18vw;
   height: 18vw;
   background-image: url(../img/cake-color.png);
@@ -991,7 +991,9 @@ section {
 }
 
 @media (max-width: 1024px) {
-
+  .header {
+    width: 100vw;
+  }
 
   .logolavka-icon {
     width: 23.63vw;
@@ -1035,7 +1037,7 @@ section {
 
   .heading-white {
     margin: 0 auto;
-    font-size: 7.17vw;
+    font-size: 5.8vw;
     text-align: center;
     width: fit-content;
     line-height: 9.23vw;
@@ -1049,13 +1051,13 @@ section {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 50px;
+    margin: 0.98vw 4.88vw;
   }
 
   .header-navigation {
     position: absolute;
     top: 6.2vw;
-    right: -50px;
+    right: -4.88vw;
     width: 31vw;
     height: 26vw;
 
@@ -1106,48 +1108,86 @@ section {
 
   .heading-group{
     height: 100%;
-  }
-
-  .promo-header__green,
-  .promo-header__vibe {
-    font-size: 6.3vw;
-    text-align: center;
+    width: 100%;
   }
 
   .promo-header__green {
     padding-top: 2.03vw;
-    
-    text-shadow: 0 0 0.86vw #414141;
   }
 
-  .promo-header__vibe{
+  /* .promo-header__vibe{
     color: #FFD7E8;
     text-shadow: 0 0 0.44vw #EB58C2;
+  } */
+
+  .container {
+    width: 69vw;
   }
 
   .vibe-heading {
     width: 24.93vw;
   }
 
-  .promo-header__green,
-  .promo-header__vibe,
-  .vibe-heading {
-    text-align: center;
-  }
-
   .promo-cake__mobile {
     height: 46.15vw;
     width: 46.15vw;
-    background-image: url(../img/promo-cake.svg);
-    background-repeat: no-repeat;
+    background-image: url(../img/redcake.png);
     border-radius: 50%;
-    background-size:contain;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+  }
+  
+  .promo-cake__mobile {
+    --n: 12;
+    --nu: 5;
+    --d: 20deg;
+    --du: 0deg;
+    --t: 2.93vw; 
+    --c: var(--purple);
+    aspect-ratio: 1;
+    position: relative;
+  }
+  
+  .promo-cake__mobile::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: var(--t);
+    background: var(--c);
+    mask:
+        linear-gradient(#0000 0 0) content-box,
+        repeating-conic-gradient(
+           from calc(var(--d)/2),
+           #000  0 calc(360deg/var(--n) - var(--d)),
+           #0000 0 calc(360deg/var(--n))
+         );
+    mask-composite: intersect;
+  }
+  
+  .promo-cake__mobile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 2.93vw;
+    background: rgb(214, 163, 167);
+    mask:
+        linear-gradient(#0000 0 0) content-box,
+        repeating-conic-gradient(
+          from calc(var(--du)/2),
+          #000  0 calc(360deg/var(--nu) - var(--du)),
+          #0000 0 calc(360deg/var(--nu))
+         );
+    mask-composite: intersect;
   }
 
   .span-pink__mobile {
-    color: #ffffff;
-    text-shadow: 0 0 1.35vw #b97993;
+    color: #be1e12;
+    font-weight: 700;
     font-size: 4vw;
     padding-top: 4vw;
   }
@@ -1161,18 +1201,16 @@ section {
 
   .participate-section__mobile {
     display: flex;
-    justify-content: center;
     position: static;
     width: 74.22vw;
-    height: 77.64vw;
-    margin-top: 7.32vw;
-    padding-bottom: 0;
+    height: 60.64vw;
+    margin: 5vw auto 0 auto;
   }
 
   .participate-container {
     justify-content: start;
     width: 69.16vw;
-    height: 60.16vw;
+    height: 44.16vw;
   }
 
   .step {
@@ -1184,11 +1222,10 @@ section {
   }
 
   .registration-btn {
-    font-size: 2.5vw;
-    line-height: normal;
-    width: 38.46vw;
-
+    font-size: 2.2vw;
+    width: 35vw;
     margin: 2.47vw auto;
+    height: 7vw;
   }
 
   .participate-text {
@@ -1242,11 +1279,16 @@ section {
   .win-section {
     flex-direction: column;
     margin: 0 auto;
+    gap: 5vw
   }
 
   .description {
     align-items: start;
     width: 70%;
+  }
+
+  .win-container {
+    gap: 5vw;
   }
 
   .win-heading__yellow {
@@ -1311,25 +1353,44 @@ section {
     transform: translateX(-1.95vw);
   }
 
+  .backgroundblur {
+    filter: blur(6vw);
+  }
+
+  .backgroundblur1 {
+    filter: blur(6vw);
+    width: 11vw;
+    height: 17vw;
+  }
+
+  .backgroundblur2 {
+    filter: blur(6vw);
+  }
+
+  .backgroundcake {
+    top: 14%;
+  }
+
+  .addcheck {
+    width: 55vw
+  }
+
   .win-heading {
     height: fit-content;
     padding-bottom: 0;
   }
 
-  .winners-content-wrapper {
-    padding-bottom: 20vw;
-  }
-
   .check-form  {
-    margin-top: 7vw;
+    margin-top: 4vw;
     width: 100%;
-    font-size: 2.73vw;
+    font-size: 2.1vw;
   }
 
   .check-input {
     margin-bottom: 5vw;
     font-size: 2.73vw;
     margin-bottom: 1.5vw;
+    height: 3vw;
   }
 
   .checkbox-input {
@@ -1337,8 +1398,13 @@ section {
     height: 4vw;
   }
 
-  .questions-content-wrapper {
-    padding-bottom: 20vw;
+  .backgroundcake__big{
+    right: 1%;
+  }
+
+  #bgcake-form__big {
+    top: 40vw;
+    right: -40%;
   }
 
   .winners-text,
@@ -1353,7 +1419,7 @@ section {
   }
 
   .check-label {
-    width: 60vw;
+    width: 100%;
   }
 
   .winners-container {
@@ -1372,6 +1438,16 @@ section {
   .question-description {
     height: fit-content;
     line-height: normal;
+  }
+
+  #questions-bgcake {
+    top: 15vw;
+    left: -20%;
+  }
+
+  #questions-bgcake__big {
+    top: 30vw;
+    right: -22%;
   }
 
   .telegram-logo {
