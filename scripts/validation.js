@@ -57,6 +57,11 @@ const validator = (name, phone, number, date, sum) => {
 
     if (userName && userPhone && userCheckNumber && userCheckSum && userCheckDate) {
       alert.classList.add("alert__good");
+      ownerName.value = "";
+      phoneNumber.value = "+7";
+      checkNumber.value = "";
+      dateCheck.value = "2024-09-03";
+      sumCheck.value = "";
 
     let user = {
         "user_name" : userName,

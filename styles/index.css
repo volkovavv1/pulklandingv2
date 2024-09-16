@@ -26,6 +26,14 @@ section {
   text-align: left;
 }
 
+#participate-id,
+#participate-mobile__id,
+#win-section__id,
+#addcheck-id,
+#questions-id {
+  scroll-margin-top: 5vw;
+}
+
 .participate-section,
 .win,
 .mainprize,
@@ -836,7 +844,7 @@ section {
 }
 
 .check-input__err {
-  background-color: #7e3434;
+  background-color: #bd5050;
   color: #2b0000;
 }
 
@@ -846,8 +854,9 @@ section {
 }
 
 .error-input {
-  color: #751010;
+  color: #a30d0d;
   text-align: center;
+  transform: translate(0.5vw, -1.5vw);
 }
 
 .error-input__active{
@@ -957,29 +966,27 @@ section {
 
 .alert {
   padding: 1.56vw;
-
   display: none;
+
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-
+  
   color: white;
 
-  margin-bottom: 4.69vw;
-  text-align: center;
-  height: 3.4vw;
-
+  margin-bottom: 3.5vw;
+  height: 2.4vw;
+  border-radius: 2vw;
 }
 
 .closebtn {
   display: block;
-  padding-bottom: 1.56vw;
   color: white;
   font-weight: bold;
   font-size: 3.2vw;
   cursor: pointer;
   transition: 0.3s;
-  height: 100%;
+  transform: translateY(-0.2vw);
 }
 
 .closebtn:hover {
@@ -997,6 +1004,14 @@ section {
 }
 
 @media (max-width: 1024px) {
+  #participate-id,
+  #participate-mobile__id,
+  #win-section__id,
+  #addcheck-id,
+  #questions-id {
+    scroll-margin-top: 10vw;
+  }
+
   .header {
     width: 100vw;
   }
@@ -1437,6 +1452,11 @@ section {
 
   .check-label {
     width: 100%;
+  }
+
+  .error-input {
+    transform: translate(1vw, -0.8vw);
+    padding-bottom: 0.5vw;
   }
 
   .winners-container {
